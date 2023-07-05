@@ -22,7 +22,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, ${{ parameters.target }}! Have a nice ${{ time }}
+- script: echo Hello, ${{ parameters.target }}! Have a nice ${{ parameters.time }}
   displayName: 'Run a one-line script'
 
 - script: |
