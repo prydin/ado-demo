@@ -9,12 +9,20 @@ trigger:
 parameters:
   - name: target
     type: string
+  - name: time
+    type: string
+    values:
+      - morning
+      - day
+      - afternoon
+      - evening
+      - night
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, ${{ parameters.target }}!
+- script: echo Hello, ${{ parameters.target }}! Have a nice ${{ time }}
   displayName: 'Run a one-line script'
 
 - script: |
