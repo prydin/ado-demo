@@ -6,8 +6,9 @@
 trigger:
 - main
 
-variables:
+parameters:
   - name: target
+    type: string
 
 pool:
   vmImage: ubuntu-latest
