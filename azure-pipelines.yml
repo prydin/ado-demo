@@ -28,4 +28,5 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    cat /does/not/exist
   displayName: 'Run a multi-line script'
